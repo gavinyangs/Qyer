@@ -39,10 +39,10 @@
 		935467B61DDBE97F005AD9E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		935467B81DDBE97F005AD9E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		935467B91DDBE97F005AD9E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		935467BB1DDBE97F005AD9E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		935467BC1DDBE97F005AD9E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		935467BB1DDBE97F005AD9E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Qyer/ViewController.h; sourceTree = SOURCE_ROOT; };
+		935467BC1DDBE97F005AD9E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Qyer/ViewController.m; sourceTree = SOURCE_ROOT; };
 		935467BF1DDBE97F005AD9E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		935467C11DDBE97F005AD9E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		935467C11DDBE97F005AD9E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		935467C41DDBE97F005AD9E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935467C61DDBE97F005AD9E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935467CB1DDBE980005AD9E0 /* QyerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QyerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,7 @@
 		935467D61DDBE980005AD9E0 /* QyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935467DA1DDBE980005AD9E0 /* QyerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QyerUITests.m; sourceTree = "<group>"; };
 		935467DC1DDBE980005AD9E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935467EE1DDBED48005AD9E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +104,12 @@
 			children = (
 				935467B81DDBE97F005AD9E0 /* AppDelegate.h */,
 				935467B91DDBE97F005AD9E0 /* AppDelegate.m */,
-				935467BB1DDBE97F005AD9E0 /* ViewController.h */,
-				935467BC1DDBE97F005AD9E0 /* ViewController.m */,
-				935467BE1DDBE97F005AD9E0 /* Main.storyboard */,
-				935467C11DDBE97F005AD9E0 /* Assets.xcassets */,
-				935467C31DDBE97F005AD9E0 /* LaunchScreen.storyboard */,
-				935467C61DDBE97F005AD9E0 /* Info.plist */,
+				935467E81DDBECFC005AD9E0 /* Category */,
+				935467E91DDBECFC005AD9E0 /* Model */,
+				935467EA1DDBECFC005AD9E0 /* NetManager */,
+				935467EB1DDBECFC005AD9E0 /* Resource */,
+				935467EC1DDBECFC005AD9E0 /* View */,
+				935467ED1DDBECFC005AD9E0 /* ViewController */,
 				935467B51DDBE97F005AD9E0 /* Supporting Files */,
 			);
 			path = Qyer;
@@ -117,7 +118,9 @@
 		935467B51DDBE97F005AD9E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				935467C61DDBE97F005AD9E0 /* Info.plist */,
 				935467B61DDBE97F005AD9E0 /* main.m */,
+				935467EE1DDBED48005AD9E0 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +141,53 @@
 				935467DC1DDBE980005AD9E0 /* Info.plist */,
 			);
 			path = QyerUITests;
+			sourceTree = "<group>";
+		};
+		935467E81DDBECFC005AD9E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		935467E91DDBECFC005AD9E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		935467EA1DDBECFC005AD9E0 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		935467EB1DDBECFC005AD9E0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				935467BE1DDBE97F005AD9E0 /* Main.storyboard */,
+				935467C11DDBE97F005AD9E0 /* Assets.xcassets */,
+				935467C31DDBE97F005AD9E0 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		935467EC1DDBECFC005AD9E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935467ED1DDBECFC005AD9E0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				935467BB1DDBE97F005AD9E0 /* ViewController.h */,
+				935467BC1DDBE97F005AD9E0 /* ViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +367,7 @@
 				935467BF1DDBE97F005AD9E0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		935467C31DDBE97F005AD9E0 /* LaunchScreen.storyboard */ = {
@@ -325,6 +376,7 @@
 				935467C41DDBE97F005AD9E0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Qyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yangxiong.Qyer;
@@ -435,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Qyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yangxiong.Qyer;
